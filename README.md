@@ -2,4 +2,11 @@
 
 Este jogo foi desenvolvido como parte do curso de iniciação em programação da Alura, utilizando JavaScript.
 
-Para rodar esse jogo acesse o editor.p5js.org [clicando aqui](https://editor.p5js.org/)
+Para iniciar o jogo, aperte qualquer tecla.
+
+A raquete **esquerda** é controlada pelos botões **W** e **S**.
+A raquete **direita** é controlada pelos botões **seta para cima** e **seta para baixo**.
+
+Para jogar, [clique aqui](https://codepen.io/dsprudente/pen/vYRyWyO)
+
+Divirta-se!
