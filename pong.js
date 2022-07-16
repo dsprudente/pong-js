@@ -54,10 +54,8 @@ function draw() {
   pontoDireito();
   pontoEsquerdo();
   testeFila();
-  if(keyIsPressed === true || comeeecaOJogo === true){
-    movimentaBolinha();
-    comeeecaOJogo = true
-  }
+  iniciarJogo();
+  reiniciarJogo();
 }
 
 function mostraBolinha() {
@@ -138,5 +136,22 @@ function testeFila(){
       } else if(filaXBolinha[0] < filaXBolinha[1]){
     atrasRaqueteD = true;
     atrasRaqueteE = false;
+  }
+}
+
+function iniciarJogo(){
+  if(keyIsDown(ENTER) || comeeecaOJogo === true){
+    movimentaBolinha();
+    comeeecaOJogo = true
+  }
+}
+
+function reiniciarJogo(){
+  if(keyIsDown(ESCAPE)){
+    comeeecaOJogo = false;
+    placarDireito = 0;
+    placarEsquerdo = 0;
+    xBolinha = 400;
+    yBolinha = 300;
   }
 }
